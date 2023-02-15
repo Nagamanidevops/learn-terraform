@@ -20,11 +20,14 @@ resource "aws_instance" "web" {
 }
 
 terraform {
-  backend "s3" {
-    bucket = "terraform-d70"
-    key    = "05-remotestate/terraform.tfstate"
-    region = "us-east-1"
-  }
+   backend "s3" {
+     bucket = "terraform-d70"
+     key    = "05-remotestate/terraform.tfstate"
+     region = "us-east-1"
+     }
+}
+
+
 
 resource "aws_security_group" "allow_tls" {
   name        = "allow_tls"
@@ -51,3 +54,4 @@ resource "aws_security_group" "allow_tls" {
     Name = "allow_tls"
   }
 }
+
