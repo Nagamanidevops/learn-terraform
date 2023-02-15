@@ -51,3 +51,11 @@ variable "sample6"{
 output "sample6"{
     value = var.sample6[1]
 }
+
+variable "sample7"{
+    default = {
+        string = "abcxyz",
+        number = 100,
+        boolean = true 
+    }
+}
