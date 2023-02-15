@@ -44,7 +44,7 @@ variable "sample6"{
     default = [
     100
     "string"
-    true
+    "true"
     ]
 }
 
