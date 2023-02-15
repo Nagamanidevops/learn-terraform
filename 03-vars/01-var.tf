@@ -59,3 +59,7 @@ variable "sample7"{
         boolean = true 
     }
 }
+
+output "sample7"{
+    value = var.sample7["number"]
+}
