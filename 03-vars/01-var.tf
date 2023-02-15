@@ -29,3 +29,25 @@ variable "sample4"{
 output "sample4"{
     value = var.sample4
 }
+
+variable "sample5"{
+    
+    default = 180
+}
+
+output "sample5"{
+    value = var.sample5
+}
+
+variable "sample6"{
+    
+    default = [
+    100
+    "string"
+    true
+    ]
+}
+
+output "sample6"{
+    value = var.sample6[1]
+}
