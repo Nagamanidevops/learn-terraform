@@ -3,7 +3,7 @@ output "demo"{
 }
 
 
-output "demo1"
-{
+output "demo1"{
+
     value = "hello1 worls"
 }
