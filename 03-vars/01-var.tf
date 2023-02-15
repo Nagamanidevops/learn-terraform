@@ -18,7 +18,7 @@ variable "sample3"{
     default = 10
 }
 
-output "sample2"{
+output "sample3"{
     value = 10
 }
 
