@@ -74,3 +74,12 @@ output demo1{
     }
 
 
+##variables from shell environment shell variables
+
+variable "demo2"{
+    default =""
+    }
+    
+    output demo2{
+        value = var.demo2
+    }
