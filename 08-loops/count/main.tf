@@ -13,6 +13,6 @@ data "aws_ami" "centos8" {
   owners      = ["973714476881"]
 }
 
-output publicip{
+output "publicip"{
     value aws.web.public_ip
 }
