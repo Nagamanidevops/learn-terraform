@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  count = length(var.component)
+  count = length(var.componet)
   ami           = data.aws_ami.centos8.id
   instance_type = "t3.micro"
   tags = {
