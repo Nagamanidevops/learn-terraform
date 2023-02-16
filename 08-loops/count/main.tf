@@ -17,6 +17,6 @@ output "publicip"{
    value = aws_instance.web.*.public_ip
 }
 
-output "componet"{
+variable "componet"{
     default  = ["cart" , "ftontend"]
 }
