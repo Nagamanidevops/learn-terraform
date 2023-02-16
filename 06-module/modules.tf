@@ -1,10 +1,10 @@
 module "ec2"{
     source = "./ec2"
-    security_group_id = [var.security_group_id]
+    security_group_id = module.sg.security_group_id.id
 }
 
-module "s3"{
-    source = "./s3"
+module "sg"{
+    source = "./sg"
 }
 
 
