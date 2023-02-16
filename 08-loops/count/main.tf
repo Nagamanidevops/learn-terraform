@@ -18,5 +18,5 @@ output "publicip"{
 }
 
 output "componet"{
-    default ["cart" , "ftontend"]
+    default  = ["cart" , "ftontend"]
 }
