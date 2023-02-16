@@ -26,5 +26,6 @@ variable "componet"{
       cart = {
       name = "catalog",
       instance_type = "t3.medium"
-    
+}
+}
 }
