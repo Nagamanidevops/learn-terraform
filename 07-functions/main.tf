@@ -12,3 +12,8 @@ data "aws_ami" "centos8" {
   name_regex  = "Centos-8-DevOps-Practice"
   owners      = ["973714476881"]
 }
+
+output instance_profile{
+    value = try(aws_instance.web..*.id[1])
+    
+} 
