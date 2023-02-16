@@ -21,10 +21,10 @@ variable "componet"{
     default  = {
       cart = {
       name = "cart",
-      instance_type = "t3.micro"
+      instance_type = "t3.medium"
     }
       cart = {
       name = "catalog",
-      instance_type = "t3.small"
+      instance_type = "t3.medium"
     
 }
