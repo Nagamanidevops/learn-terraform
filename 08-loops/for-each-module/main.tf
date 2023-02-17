@@ -14,7 +14,8 @@ variable "componet"{
 
 module "ec2"{
     source = "./module"
-    for_each = var.component
+    
+    for_each = var.componet
     instance_type = each.value.instance_type
-    name = each value.name 
+    name = each.value.name 
 }
