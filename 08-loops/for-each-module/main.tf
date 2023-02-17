@@ -22,5 +22,5 @@ module "ec2"{
 
 output "public-ip"{
     value = {
-    for k , v in module.ec2 : => v[ec2].public_ip
+    for k, v in module.ec2 : k => v[ec2].public_ip
 }
