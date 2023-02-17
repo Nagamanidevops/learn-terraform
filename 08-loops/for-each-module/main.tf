@@ -19,3 +19,7 @@ module "ec2"{
     instance_type = each.value.instance_type
     name = each.value.name 
 }
+
+output "public-ip"{
+    value = module.ec2
+}
