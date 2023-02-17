@@ -17,5 +17,4 @@ module "ec2"{
     for_each = var.component
     instance_type = each.value.instance_type
     name = each value.name 
-    
 }
