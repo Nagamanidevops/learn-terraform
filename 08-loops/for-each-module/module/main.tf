@@ -12,10 +12,6 @@ data "aws_ami" "centos8" {
   owners      = ["973714476881"]
 }
 
-
 variable "instance_type"{}
-  
-
-
 variable "name"{}
   
