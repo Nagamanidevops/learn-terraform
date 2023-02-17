@@ -13,10 +13,9 @@ data "aws_ami" "centos8" {
 }
 
 
-variable "instance_type"{
+variable "instance_type"{}
   
-}
 
-variable "name"{
+
+variable "name"{}
   
-}
