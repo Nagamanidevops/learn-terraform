@@ -17,10 +17,11 @@ module "ec2"{
     
     for_each = var.componet
     instance_type = each.value.instance_type
-    name = each.value.name 
+    name = each.value.name
 }
 
 output "public-ip"{
     value = {
     for k, v in module.ec2 : k => v[ec2].public_ip
+}
 }
