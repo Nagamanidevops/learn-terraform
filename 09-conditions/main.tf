@@ -1,7 +1,7 @@
 resource "aws_instance" "web" {
 instance_type = var.type == "null" ? "t3.medium" : var.type
   ami           = data.aws_ami.centos8.id
-  instance_type = "t3.micro"""
+  instance_type = "t3.micro"
   tags = {
     Name = "dummy"
   }
