@@ -19,7 +19,7 @@ resource "aws_instance" "web" {
 }
 
 
-provisioners "remote-exec"{
+provisioner "remote-exec"{
     connection{
         host = self.public_ip
         user = "centos"
