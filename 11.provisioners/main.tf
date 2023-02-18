@@ -27,8 +27,8 @@ resource "null_resource" "provision" {
     }
 
     inline = [
-      "hello chava"
-    ]
+      "echo chava"
+    
   }
 }
 
