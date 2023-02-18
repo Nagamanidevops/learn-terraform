@@ -17,18 +17,21 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
   
-  provisioner "remote-exec"{
-    connection{
-        host = self.public_ip
-        user = "centos"
-        password = "DevOps321"
-    }
-    
-    inline = [
-    "false"
-    ]
-}
-}
+  }
+  
+  resource "null_resource" "provision"{
+      provisioner "remote-exec"{
+      connection{
+          host = aws_instance.web
+          user = centos
+          password = DevOps321
+      }
+      inline = [
+      "false"
+      ]
+          
+      }
+  }
 
 
 
