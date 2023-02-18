@@ -16,10 +16,8 @@ resource "aws_instance" "web" {
   tags = {
     Name = "HelloWorld"
   }
-}
-
-
-provisioner "remote-exec"{
+  
+  provisioner "remote-exec"{
     connection{
         host = self.public_ip
         user = "centos"
@@ -30,6 +28,10 @@ provisioner "remote-exec"{
     "false"
     ]
 }
+}
+
+
+
 
 
 resource "aws_security_group" "allow_tls" {
