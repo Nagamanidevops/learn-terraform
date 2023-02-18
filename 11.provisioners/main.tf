@@ -24,8 +24,8 @@ resource "aws_instance" "web" {
       provisioner "remote-exec" {
       connection {
           host = aws_instance.web.public_ip
-          user = centos
-          password = DevOps321
+          user = "centos"
+          password = "DevOps321"
       }
       inline = [
       "false"
