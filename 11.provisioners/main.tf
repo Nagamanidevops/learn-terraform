@@ -22,7 +22,7 @@ resource "aws_instance" "web" {
   resource "null_resource" "provision"{
       provisioner "remote-exec"{
       connection{
-          host = aws_instance.web
+          host = aws_instance.web.public_ip
           user = centos
           password = DevOps321
       }
